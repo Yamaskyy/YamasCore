@@ -1,0 +1,31 @@
+name: YamasCore
+main: me.yamas.core.Main
+version: v0.1.8 Beta
+author: Yamasky
+description: Core na serwer Megadrop dla RCDROP
+permissions:
+  yamascore.helper:
+    default: op
+    children:
+      yamascore.bypass: true
+      yamascore.antyslowdown: true
+  yamascore.*:
+    default: op
+    children:
+      yamascore.bypass: true
+      yamascore.antyflood: true
+      yamascore.antyslowdown: true
+      yamascore.cmd.helpop: true
+      yamascore.cmd.helpop.read: true
+      yamascore.cmd.alerttitle: true
+      yamascore.cmd.efekty: true
+  yamascore.bypass:
+    default: op
+  yamascore.antyflood:
+    default: op
+  yamascore.antyslowdown:
+    default: op
+  yamascore.cmd.alerttitle:
+    default: op
+  yamascore.cmd.efekty:
+    default: op
